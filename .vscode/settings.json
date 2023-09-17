@@ -1,0 +1,21 @@
+{
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    // "files.exclude": {
+    //     "**/.git": true,
+    //     "**/.svn": true,
+    //     "**/.hg": true,
+    //     "**/CVS": true,
+    //     "**/.DS_Store": true,
+    //     "**/Thumbs.db": true,
+    //     "node_modules": true,
+    //     "data": true,
+    //     "playgrounds": true,
+    //     "views": true,
+    //     ".env": true,
+    //     "fetcher.js": true,
+    //     "pnpm-lock.yaml": true,
+    //     "*.http": true,
+    //     "nodemon.json": true,
+    //     ".gitignore": true,
+    // }
+}

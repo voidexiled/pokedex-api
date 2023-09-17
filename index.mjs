@@ -5,16 +5,12 @@ config();
 
 const app = express();
 
-// app.use(express.urlencoded({ extended: true }));
-
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Rutas
+app.use(express.json({ limit: "50mb" }));
 
-// app.get("/pokemon", getAllPokemons);
-// app.get("/pokemon/:id", getPokemonById);
+// Rutas
 app.use("/pokemon", pokemonRoutes);
 
-app.listen(process.env.DB_PORT, () => {
-  console.log(`listening on https://localhost:${process.env.DB_PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`listening on https://localhost:${process.env.PORT}`);
 });

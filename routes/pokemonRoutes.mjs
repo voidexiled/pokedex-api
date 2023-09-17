@@ -2,12 +2,18 @@ import { Router } from "express";
 
 import {
   getAllPokemons,
-  getPokemonById,
+  getPokemonByNumber,
 } from "../controllers/pokemonController.mjs";
 
 const router = Router();
 router.get("/", getAllPokemons);
-router.get("/:id", getPokemonById);
+router.get("/:number", getPokemonByNumber);
+
+// router.get("/:types", getPokemonByTypes);
+// router.get("/:", getPokemonByName);
+// router.get("/:type", getPokemonByNumber);
+
+// router.get("/:name", getPokemonByName);
 
 // router.use();
 export default router;
