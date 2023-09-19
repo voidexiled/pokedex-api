@@ -1,7 +1,7 @@
 import { PokemonModel } from "../models/database/pokemon.mjs";
 
 export async function getAllPokemons(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // Cambia esto al origen de tu aplicación Frontend
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Cambia esto al origen de tu aplicación Frontend
   try {
     if (req.query.limit) {
       console.log(req.query.limit);
@@ -16,7 +16,7 @@ export async function getAllPokemons(req, res) {
 }
 
 export async function getPokemonByNumber(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // Cambia esto al origen de tu aplicación Frontend
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Cambia esto al origen de tu aplicación Frontend
   console.log(req.params);
   if (req.params.number) {
     const pokemon = await PokemonModel.getByNumber(req.params.number);
